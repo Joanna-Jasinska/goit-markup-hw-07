@@ -1,0 +1,110 @@
+/* progress done :
+-body
+
+working on :
+
+- footer
+
+to be done : 
+
+- header 
+- main
+- modal
+
+- portfolio..
+
+*/
+/* ------------body------------- */
+.body__container {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-normal);
+  font-weight: 400;
+  font-size: 14px;
+  position: relative;
+  width: 1600px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+/* ------------body------------- */
+/* ------------footer------------- */
+
+.footer {
+  margin: 0px auto;
+  width: 1600px;
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: left;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 70px;
+
+  font-weight: 700;
+}
+#contact > :nth-child(n) {
+  display: flex;
+  padding-top: 9px;
+  margin: 0;
+}
+#contact > :first-child {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+#contact > :last-child {
+  display: flex;
+
+  padding-bottom: 60px;
+  margin: 0;
+}
+.contact__link {
+  font-weight: 500;
+  color: var(--color-strong) 60%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+.social-icons__icon {
+  fill: var(--color-normal);
+  border-radius: 50%;
+  background-color: var(--color-background1);
+}
+.social-icons__icon:hover,
+.social-icons__icon:focus {
+  fill: var(--color-background1);
+  background-color: var(--color-accented);
+  cursor: pointer;
+}
+.company-name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  height: 31px;
+}
+.accented-color {
+  color: var(--color-accented);
+}
+.strong-color {
+  color: var(--color-strong);
+}
+.strong-inverted-color {
+  color: var(--color-background1);
+}
+/* ------------footer------------- */
+/ * ------------.------------- */
+/* ------------.------------- */
+/* ------------.------------- */
+/* ------------.------------- */
+/* ------------.------------- */
+/* ------------.------------- */
