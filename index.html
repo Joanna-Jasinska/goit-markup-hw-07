@@ -17,9 +17,9 @@
   </head>
   <body>
     <div class="body__container">
-      <header class="container container-lined">
+      <header class="container flex-lined-space-between header">
         <a
-          class="container-left"
+          class="flex-lined-left page-link"
           href="https://joanna-jasinska.github.io/goit-markup-hw-06/"
         >
           <h2 class="company-name">
@@ -28,23 +28,21 @@
           </h2>
         </a>
 
-        <nav class="container-spaced">
-          <a class="link1 has-hover current-page" href="./index.html"
-            >Agencja</a
-          >
-          <a class="link1 has-hover" href="./portfolio.html">Portfolio</a>
-          <a class="link1 has-hover" href="#contact">Kontakt</a>
+        <nav class="flex-lined-space-between navigation">
+          <a class="header__link current-page" href="./index.html">Agencja</a>
+          <a class="header__link" href="./portfolio.html">Portfolio</a>
+          <a class="header__link" href="#contact">Kontakt</a>
         </nav>
 
-        <div class="container-right">
-          <a class="link1 has-hover" href="mailto:info@example.com"
+        <div class="header__flex-right">
+          <a class="header__link" href="mailto:info@example.com"
             ><svg class="icon" width="16" height="12">
               <use href="./images/icons.svg#envelope"></use>
             </svg>
             info@example.com</a
           >
 
-          <a class="link1 has-hover" href="tel:+48111111111">
+          <a class="header__link" href="tel:+48111111111">
             <svg class="icon" width="16" height="12">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>
@@ -53,11 +51,13 @@
         </div>
       </header>
       <main>
-        <section class="banner1 container-centered" id="agency">
-          <h1>EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
+        <section class="banner-huge flex-column-centered" id="agency">
+          <h1 class="banner-huge__slogan">
+            EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU
+          </h1>
 
           <button
-            class="box-200x50 has-hover button-animated button1"
+            class="button-default banner-huge__button"
             type="button"
             value="Zamów usługę"
             data-modal-open
@@ -67,55 +67,55 @@
         </section>
 
         <section class="upper-article section" id="portfolio">
-          <ul class="container container-lined">
+          <ul class="container container-lined mini-articles">
             <li>
-              <div class="icon-big-background">
-                <svg class="icon-big" height="70">
+              <div class="mini-articles__icon-background">
+                <svg class="mini-articles__icon" height="70">
                   <use href="./images/icons.svg#antenna-1"></use>
                 </svg>
               </div>
-              <h3>LOREM IPSUM</h3>
+              <h3 class="mini-articles__title">LOREM IPSUM</h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcusem. Sed non sodales dui. Interdum et malesuada
             </li>
             <li>
-              <div class="icon-big-background">
-                <svg class="icon-big" height="70">
+              <div class="mini-articles__icon-background">
+                <svg class="mini-articles__icon" height="70">
                   <use href="./images/icons.svg#clock-1"></use>
                 </svg>
               </div>
-              <h3>LOREM IPSUM</h3>
+              <h3 class="mini-articles__title">LOREM IPSUM</h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcusem. Sed non sodales dui. Interdum et malesuada
             </li>
             <li>
-              <div class="icon-big-background">
-                <svg class="icon-big" height="70">
+              <div class="mini-articles__icon-background">
+                <svg class="mini-articles__icon" height="70">
                   <use href="./images/icons.svg#diagram-1"></use>
                 </svg>
               </div>
-              <h3>LOREM IPSUM</h3>
+              <h3 class="mini-articles__title">LOREM IPSUM</h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcusem. Sed non sodales dui. Interdum et malesuada
             </li>
             <li>
-              <div class="icon-big-background">
-                <svg class="icon-big" height="70">
+              <div class="mini-articles__icon-background">
+                <svg class="mini-articles__icon" height="70">
                   <use href="./images/icons.svg#astronaut-1"></use>
                 </svg>
               </div>
-              <h3>LOREM IPSUM</h3>
+              <h3 class="mini-articles__title">LOREM IPSUM</h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcusem. Sed non sodales dui. Interdum et malesuada
             </li>
           </ul>
-          <section>
-            <h2 class="container-centered margin-bottom-50">
+          <section class="what-we-do">
+            <h2 class="what-we-do__title flex-column-centered">
               Czym się zajmujemy
             </h2>
 
-            <ul class="container container-wrap">
-              <li class="position-parent">
+            <ul class="container flex-wrap-space-around">
+              <li class="what-we-do__card">
                 <img
                   src="./images/img-code.jpg"
                   alt="Writing codes and algorhitms"
@@ -126,35 +126,35 @@
                   Aplikacje komputerowe
                 </div>
               </li>
-              <li class="position-parent">
+              <li class="what-we-do__card">
                 <img
                   src="./images/img-app.jpg"
                   alt="Working on smartphone apps"
                   width="370"
                   height="294"
                 />
-                <div class="desc-inside-image-bottom">
-                  Aplikacje komputerowe
-                </div>
+                <div class="desc-inside-image-bottom">Aplikacje mobilne</div>
               </li>
-              <li class="position-parent">
+              <li class="what-we-do__card">
                 <img
                   src="./images/img-tab.jpg"
                   alt="Working with color palette on a tablet"
                   width="370"
                   height="294"
                 />
-                <div class="desc-inside-image-bottom">s komputerowe</div>
+                <div class="desc-inside-image-bottom">
+                  Rozwiązania graficzne
+                </div>
               </li>
             </ul>
           </section>
         </section>
 
         <section class="lower-article section">
-          <h2 class="container-centered margin-bottom-50">Nasz zespół</h2>
+          <h2 class="flex-column-centered section__title">Nasz zespół</h2>
 
-          <ul class="container container-wrap">
-            <li class="personel-card container-centered">
+          <ul class="container flex-wrap-space-around">
+            <li class="personel-card flex-column-centered">
               <img
                 src="./images/portrait1.jpg"
                 alt="Portrait of John Doe, smiling man"
@@ -162,9 +162,9 @@
                 height="260"
               />
               <section class="padding-30 center">
-                <h4>John Doe</h4>
+                <h4 class="personel-card__name">John Doe</h4>
                 Product Designer
-                <div class="icons-socials-bar">
+                <div class="social-icons-bar">
                   <svg class="icon-socials has-hover" width="44" height="44">
                     <use href="./images/icons.svg#Ellipse-3"></use>
                   </svg>
@@ -188,19 +188,19 @@
                 height="260"
               />
               <section class="padding-30 center">
-                <h4>John Doe</h4>
+                <h4 class="personel-card__name">John Doe</h4>
                 Frontend Developer
-                <div class="icons-socials-bar">
-                  <svg class="icon-socials has-hover" width="44" height="44">
+                <div class="social-icons">
+                  <svg class="social-icons__icon" width="44" height="44">
                     <use href="./images/icons.svg#Ellipse-3"></use>
                   </svg>
-                  <svg class="icon-socials has-hover" width="44" height="44">
+                  <svg class="social-icons__icon" width="44" height="44">
                     <use href="./images/icons.svg#Ellipse"></use>
                   </svg>
-                  <svg class="icon-socials has-hover" width="44" height="44">
+                  <svg class="social-icons__icon" width="44" height="44">
                     <use href="./images/icons.svg#Ellipse-1"></use>
                   </svg>
-                  <svg class="icon-socials has-hover" width="44" height="44">
+                  <svg class="social-icons__icon" width="44" height="44">
                     <use href="./images/icons.svg#Ellipse-2"></use>
                   </svg>
                 </div>
@@ -214,9 +214,9 @@
                 height="260"
               />
               <section class="padding-30 center">
-                <h4>John Doe</h4>
+                <h4 class="personel-card__name">John Doe</h4>
                 Marketing
-                <div class="icons-socials-bar">
+                <div class="social-icons-bar">
                   <svg class="icon-socials has-hover" width="44" height="44">
                     <use href="./images/icons.svg#Ellipse-3"></use>
                   </svg>
@@ -241,9 +241,9 @@
               />
 
               <section class="padding-30 center">
-                <h4>John Doe</h4>
+                <h4 class="personel-card__name">John Doe</h4>
                 UI Designer
-                <div class="icons-socials-bar">
+                <div class="social-icons-bar">
                   <svg class="icon-socials has-hover" width="44" height="44">
                     <use href="./images/icons.svg#Ellipse-3"></use>
                   </svg>
@@ -301,7 +301,11 @@
       </main>
       <footer class="footer">
         <div id="contact" class="contact">
-          <a href="https://joanna-jasinska.github.io/goit-markup-hw-07/">
+          <a
+            class="page-link"
+            id="page-link"
+            href="https://joanna-jasinska.github.io/goit-markup-hw-07/"
+          >
             <h2 class="company-name">
               <span class="accented-color">Web</span
               ><span class="strong-inverted-color">Studio</span>
@@ -320,7 +324,7 @@
           </p>
         </div>
         <div>
-          <p class="text-white margin-bottom-20">DOŁĄCZ DO NAS</p>
+          <p class="text-white margin-top60-bottom20">DOŁĄCZ DO NAS</p>
           <div class="social-icons">
             <svg class="social-icons__icon has-hover" width="44" height="44">
               <use href="./images/icons.svg#Ellipse-3"></use>
@@ -338,23 +342,21 @@
         </div>
         <div>
           <form method="get" name="newsletter-form" class="newsletter-form">
-            <label class="input-newsletter-email" for="input-name"
+            <label
+              class="newsletter-form__label-email"
+              for="newsletter-form__input-email"
               >Zapisz się do newslettera</label
             >
             <div class="flex-lined">
               <input
-                id="input-newsletter-email"
+                id="newsletter-form__input-email"
                 type="email"
                 name="newsletter-email"
                 placeholder="E-mail"
                 required
               />
 
-              <button
-                class="box-200x50 button-animated form-button has-hover"
-                type="submit"
-                value="Zapisz się"
-              >
+              <button class="button-default" type="submit" value="Zapisz się">
                 <div>Zapisz się</div>
                 <svg class="icon-send" width="24" height="24" margin="auto">
                   <use href="./images/icons.svg#icon-send"></use>
@@ -366,11 +368,19 @@
       </footer>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <form method="get" name="signup-form">
-            <h2>Zostaw swoje dane w formularzu poniżej</h2>
-            <div class="label-flex">
-              <input id="input-name" type="text" name="name" required />
-              <label for="input-name"
+          <form method="get" name="signup-form" class="message-us-form">
+            <h2 class="message-us-form__title">
+              Zostaw swoje dane w formularzu poniżej
+            </h2>
+            <div class="flex-column-reverse">
+              <input
+                class="message-us-form_input"
+                id="input-name"
+                type="text"
+                name="name"
+                required
+              />
+              <label class="flex-column-reverse__label" for="input-name"
                 >Imię
                 <svg
                   class="icon-input-person"
@@ -383,9 +393,15 @@
               </label>
             </div>
 
-            <div class="label-flex">
-              <input id="input-phone" type="tel" name="tel" required />
-              <label for="input-phone"
+            <div class="flex-column-reverse">
+              <input
+                class="message-us-form_input"
+                id="input-phone"
+                type="tel"
+                name="tel"
+                required
+              />
+              <label class="flex-column-reverse__label" for="input-phone"
                 >Telefon
                 <svg
                   class="icon-input-phone"
@@ -398,9 +414,15 @@
               </label>
             </div>
 
-            <div class="label-flex">
-              <input id="input-email" type="email" name="email" required />
-              <label for="input-email"
+            <div class="flex-column-reverse">
+              <input
+                class="message-us-form_input"
+                id="input-email"
+                type="email"
+                name="email"
+                required
+              />
+              <label class="flex-column-reverse__label" for="input-email"
                 >Email
                 <svg
                   class="icon-input-email"
@@ -413,17 +435,21 @@
               </label>
             </div>
 
-            <div class="label-flex">
+            <div class="flex-column-reverse">
               <textarea
+                class="message-us-form_textarea"
                 id="input-comment"
                 placeholder="Wprowadź tekst"
                 name="comment"
               ></textarea>
-              <label class="input-textarea" for="input-comment"
+              <label
+                class="flex-column-reverse__label"
+                class="input-textarea"
+                for="input-comment"
                 >Komentarz</label
               >
             </div>
-            <div class="container-lined-middle checkbox-container">
+            <div class="policy-checkbox">
               <input
                 id="input-policy-acceptance"
                 type="checkbox"
@@ -431,26 +457,34 @@
                 required
               />
 
-              <label class="input-ok" for="input-policy-acceptance"
+              <label
+                class="policy-checkbox__label"
+                for="input-policy-acceptance"
                 >Oświadczam iż akceptuję
-                <a class="link1 has-hover accented-color" href="">Regulamin</a>
+                <a class="policy-checkbox__link" href="">Regulamin</a>
                 i
-                <a class="link1 has-hover accented-color" href=""
+                <a class="policy-checkbox__link" href=""
                   >Politykę Prywatności.</a
                 >
-                <svg class="checkbox-0" width="16" height="15" margin="auto">
+                <svg
+                  class="policy-checkbox__icon-unchecked"
+                  width="16"
+                  height="15"
+                  margin="auto"
+                >
                   <use href="./images/icons.svg#checkbox-background"></use>
                 </svg>
-                <svg class="checkbox-1" width="16" height="15" margin="auto">
+                <svg
+                  class="policy-checkbox__icon-checked"
+                  width="16"
+                  height="15"
+                  margin="auto"
+                >
                   <use href="./images/icons.svg#checkbox-checked"></use>
                 </svg>
               </label>
             </div>
-            <button
-              class="box-200x50 button-animated form-button has-hover"
-              type="submit"
-              value="Wyślij"
-            >
+            <button class="button-default" type="submit" value="Wyślij">
               Wyślij
             </button>
           </form>
@@ -469,5 +503,7 @@
       </div>
       <script src="./js/modal.js"></script>
     </div>
+
+    <script src="./js/pagelink.js"></script>
   </body>
 </html>
