@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/style-BEM.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,10 +16,10 @@
     <link rel="stylesheet" href="./css/modern-normalize.css" />
   </head>
   <body>
-    <div class="container-body">
-      <header class="container container-lined">
+    <div class="body__container">
+      <header class="container flex-lined-space-between header">
         <a
-          class="container-left"
+          class="flex-lined-left page-link"
           href="https://joanna-jasinska.github.io/goit-markup-hw-06/"
         >
           <h2 class="company-name">
@@ -27,23 +28,21 @@
           </h2>
         </a>
 
-        <nav class="container-spaced">
-          <a class="link1 has-hover" href="./index.html">Agencja</a>
-          <a class="link1 has-hover current-page" href="./portfolio.html"
-            >Portfolio</a
-          >
-          <a class="link1 has-hover" href="#contact">Kontakt</a>
+        <nav class="flex-lined-space-between navigation">
+          <a class="header__link current-page" href="./index.html">Agencja</a>
+          <a class="header__link" href="./portfolio.html">Portfolio</a>
+          <a class="header__link" href="#contact">Kontakt</a>
         </nav>
 
-        <div class="container-right">
-          <a class="link1 has-hover" href="mailto:info@example.com"
+        <div class="header__flex-right">
+          <a class="header__link" href="mailto:info@example.com"
             ><svg class="icon" width="16" height="12">
               <use href="./images/icons.svg#envelope"></use>
             </svg>
             info@example.com</a
           >
 
-          <a class="link1 has-hover" href="tel:+48111111111">
+          <a class="header__link" href="tel:+48111111111">
             <svg class="icon" width="16" height="12">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>
@@ -52,35 +51,55 @@
         </div>
       </header>
       <main class="section">
-        <ul class="list-filter container-lined-middle margin-bottom-50">
+        <ul class="list-filter flex-lined-middle-center section__title">
           <li>
-            <button class="button1 has-hover" type="button" value="Wszystkie">
+            <button
+              class="button--product-filtering has-hover"
+              type="button"
+              value="Wszystkie"
+            >
               Wszystkie
             </button>
           </li>
           <li>
-            <button class="button1 has-hover" type="button" value="Strony">
+            <button
+              class="button--product-filtering has-hover"
+              type="button"
+              value="Strony"
+            >
               Strony
             </button>
           </li>
           <li>
-            <button class="button1 has-hover" type="button" value="Aplikacje">
+            <button
+              class="button--product-filtering has-hover"
+              type="button"
+              value="Aplikacje"
+            >
               Aplikacje
             </button>
           </li>
           <li>
-            <button class="button1 has-hover" type="button" value="Dizajn">
+            <button
+              class="button--product-filtering has-hover"
+              type="button"
+              value="Dizajn"
+            >
               Dizajn
             </button>
           </li>
           <li>
-            <button class="button1 has-hover" type="button" value="Marketing">
+            <button
+              class="button--product-filtering has-hover"
+              type="button"
+              value="Marketing"
+            >
               Marketing
             </button>
           </li>
         </ul>
 
-        <ul class="container product-list container-wrap">
+        <ul class="container product-list flex-wrap-space-around">
           <li>
             <section class="product-card has-hover">
               <div class="slider-container has-hover">
@@ -97,8 +116,8 @@
                   serwery konkurencji
                 </article>
               </div>
-              <div class="product-card-bottom">
-                <h3>Technocrack</h3>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">Technocrack</h3>
                 Strona internetowa
               </div>
             </section>
@@ -117,8 +136,10 @@
                   serwery konkurencji
                 </article>
               </div>
-              <div class="product-card-bottom">
-                <h3>Grafika New Orlean vs Golden Star</h3>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">
+                  Grafika New Orlean vs Golden Star
+                </h3>
                 Dizajn
               </div>
             </section>
@@ -137,8 +158,8 @@
                   serwery konkurencji
                 </article>
               </div>
-              <div class="product-card-bottom">
-                <h3>Restauracja Seafood</h3>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">Restauracja Seafood</h3>
                 Aplikacja
               </div>
             </section>
@@ -157,8 +178,8 @@
                   serwery konkurencji
                 </article>
               </div>
-              <div class="product-card-bottom">
-                <h3>Porjekt Prime</h3>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">Porjekt Prime</h3>
                 Marketing
               </div>
             </section>
@@ -177,8 +198,8 @@
                   serwery konkurencji
                 </article>
               </div>
-              <div class="product-card-bottom">
-                <h3>Projekt Boxes</h3>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">Projekt Boxes</h3>
                 Aplikacja
               </div>
             </section>
@@ -197,8 +218,10 @@
                   serwery konkurencji
                 </article>
               </div>
-              <div class="product-card-bottom">
-                <h3>Inspiration has no Borders</h3>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">
+                  Inspiration has no Borders
+                </h3>
                 Strona Internetowa
               </div>
             </section>
@@ -217,8 +240,10 @@
                   serwery konkurencji
                 </article>
               </div>
-              <div class="product-card-bottom">
-                <h3>Magazyn Limited Edition</h3>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">
+                  Magazyn Limited Edition
+                </h3>
                 Dizajn
               </div>
             </section>
@@ -237,8 +262,8 @@
                   serwery konkurencji
                 </article>
               </div>
-              <div class="product-card-bottom">
-                <h3>Projekt LAB</h3>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">Projekt LAB</h3>
                 Marketing
               </div>
             </section>
@@ -257,79 +282,79 @@
                   serwery konkurencji
                 </article>
               </div>
-              <div class="product-card-bottom">
-                <h3>Growing Business</h3>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">Growing Business</h3>
                 Aplikacja
               </div>
             </section>
           </li>
         </ul>
       </main>
-      <footer>
-        <div class="container-left container footer-flex">
-          <div id="contact">
-            <a href="https://joanna-jasinska.github.io/goit-markup-hw-06/">
-              <h2 class="company-name">
-                <span class="accented-color">Web</span
-                ><span class="strong-inverted-color">Studio</span>
-              </h2>
-            </a>
-            <address class="text-white">
-              <strong> m. Warszawa, Aleje Jerozolimskie 21</strong>
-            </address>
-            <p>
-              <a class="link2" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </p>
-            <p>
-              <a class="link2" href="tel:+48111111111">+48 111 111 111</a>
-            </p>
+      <footer class="footer">
+        <div id="contact" class="contact">
+          <a
+            class="page-link"
+            id="page-link"
+            href="https://joanna-jasinska.github.io/goit-markup-hw-07/"
+          >
+            <h2 class="company-name">
+              <span class="accented-color">Web</span
+              ><span class="strong-inverted-color">Studio</span>
+            </h2>
+          </a>
+          <address class="text-white contact__address">
+            <strong> m. Warszawa, Aleje Jerozolimskie 21</strong>
+          </address>
+          <p>
+            <a class="contact__link" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </p>
+          <p>
+            <a class="contact__link" href="tel:+48111111111">+48 111 111 111</a>
+          </p>
+        </div>
+        <div>
+          <p class="text-white margin-top60-bottom20">DOŁĄCZ DO NAS</p>
+          <div class="social-icons">
+            <svg class="social-icons__icon has-hover" width="44" height="44">
+              <use href="./images/icons.svg#Ellipse-3"></use>
+            </svg>
+            <svg class="social-icons__icon has-hover" width="44" height="44">
+              <use href="./images/icons.svg#Ellipse"></use>
+            </svg>
+            <svg class="social-icons__icon has-hover" width="44" height="44">
+              <use href="./images/icons.svg#Ellipse-1"></use>
+            </svg>
+            <svg class="social-icons__icon has-hover" width="44" height="44">
+              <use href="./images/icons.svg#Ellipse-2"></use>
+            </svg>
           </div>
-          <div>
-            <p class="text-white margin-bottom-20">DOŁĄCZ DO NAS</p>
-            <div class="icons-socials-bar">
-              <svg class="icon-socials has-hover" width="44" height="44">
-                <use href="./images/icons.svg#Ellipse-3"></use>
-              </svg>
-              <svg class="icon-socials has-hover" width="44" height="44">
-                <use href="./images/icons.svg#Ellipse"></use>
-              </svg>
-              <svg class="icon-socials has-hover" width="44" height="44">
-                <use href="./images/icons.svg#Ellipse-1"></use>
-              </svg>
-              <svg class="icon-socials has-hover" width="44" height="44">
-                <use href="./images/icons.svg#Ellipse-2"></use>
-              </svg>
-            </div>
-          </div>
-          <div>
-            <form method="get" name="newsletter-form" class="newsletter-form">
-              <label class="input-newsletter-email" for="input-name"
-                >Zapisz się do newslettera</label
-              >
-              <div class="flex-lined">
-                <input
-                  id="input-newsletter-email"
-                  type="email"
-                  name="newsletter-email"
-                  placeholder="E-mail"
-                  required
-                />
+        </div>
+        <div>
+          <form method="get" name="newsletter-form" class="newsletter-form">
+            <label
+              class="newsletter-form__label-email"
+              for="newsletter-form__input-email"
+              >Zapisz się do newslettera</label
+            >
+            <div class="flex-lined">
+              <input
+                id="newsletter-form__input-email"
+                type="email"
+                name="newsletter-email"
+                placeholder="E-mail"
+                required
+              />
 
-                <button
-                  class="box-200x50 button-animated form-button has-hover"
-                  type="submit"
-                  value="Zapisz się"
-                >
-                  <div>Zapisz się</div>
-                  <svg class="icon-send" width="24" height="24" margin="auto">
-                    <use href="./images/icons.svg#icon-send"></use>
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </div>
+              <button class="button-default" type="submit" value="Zapisz się">
+                <div>Zapisz się</div>
+                <svg class="icon-send" width="24" height="24" margin="auto">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </footer>
     </div>

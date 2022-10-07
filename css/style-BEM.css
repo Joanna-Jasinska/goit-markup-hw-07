@@ -1,9 +1,16 @@
 /* progress done :
 
+==BEM:
 --index:
 - body
 - footer
 - modal
+- header 
+- main
+
+--portfolio:
+- body
+- footer
 - header 
 
 working on :
@@ -12,14 +19,12 @@ working on :
 
 to be done : 
 
---portfolio:
-- body
-- footer
-- modal
-- header 
-- main
+==scss
 
 */
+/* =========================================================== */
+/* =====================index================================= */
+/* =========================================================== */
 /* ------------body------------- */
 .body__container {
   font-family: "Roboto", sans-serif;
@@ -169,9 +174,6 @@ body {
   gap: 10px;
   align-items: center;
   justify-content: center;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-  transition-property: color, fill, background-color, box-shadow;
 }
 .button-default:hover {
   cursor: pointer;
@@ -568,9 +570,6 @@ input:checked + label .policy-checkbox__icon-unchecked {
 .lower-article {
   background-color: var(--color-background3);
 }
-.section__title {
-  margin-bottom: 50px;
-}
 .personel-card__name {
   font-weight: 500;
   font-size: 16px;
@@ -582,10 +581,158 @@ input:checked + label .policy-checkbox__icon-unchecked {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
+.personel-card__text-section {
+  padding: 20px;
+  text-align: center;
+}
+.personel-card__text-section > :nth-child(n) {
+  margin: 10px;
+}
+
+/* ------------main---upper-article---the second one------- */
+
+.icon-client {
+  fill: var(--color-normal);
+  width: 170;
+  height: 92;
+  padding: 16px 32px;
+  border: 1px solid var(--color-gray);
+}
+.icon-client:hover,
+.icon-client:focus {
+  fill: var(--color-accented);
+  border: 1px solid var(--color-accented);
+  cursor: pointer;
+}
+.icon-client > svg:hover,
+.icon-client > svg:focus {
+  fill: var(--color-accented);
+  cursor: pointer;
+}
+.icon-client > svg {
+  fill: var(--color-normal);
+}
+/* ------------main------------- */
+/* =========================================================== */
+/* =====================index================================= */
+/* =========================================================== */
+/* =====================portfolio============================= */
+/* =========================================================== */
+
+/* ------------main------------- */
+.flex-lined-middle-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 1200px;
+  margin: 0 215px;
+  gap: 8px;
+}
+
+.button--product-filtering {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--color-background3);
+  color: var(--color-strong);
+  border-radius: 4px;
+  border: solid var(--color-accented);
+  border-width: 0px;
+  padding: 6px 22px;
+}
+
+.button--product-filtering:hover,
+.button--product-filtering:focus {
+  background-color: var(--color-accented);
+  color: var(--color-background1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+.flex-wrap-space-around {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.product-card {
+  font-size: 16px;
+  border-top: 0px;
+  position: relative;
+  overflow: hidden;
+}
+.product-card__text-section {
+  border-top: 0px;
+  border-left: 1px solid var(--color-border1);
+  border-right: 1px solid var(--color-border1);
+  border-bottom: 1px solid var(--color-border1);
+  padding: 20px 24px;
+  line-height: 188%;
+}
+.product-card__product-name {
+  margin-bottom: 4px;
+  line-height: 200%;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.product-card .slide-from-bottom {
+  position: absolute;
+  top: 100%;
+
+  padding: 49px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  letter-spacing: 0.03em;
+
+  /* bottom: -10px; */
+
+  color: #ffffff;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: top;
+}
+
+.product-card:hover .slide-from-bottom {
+  top: 0px;
+}
+
+.product-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.slider-container {
+  overflow: hidden;
+  position: relative;
+}
 /* ------------main------------- */
 /* ------------.------------- */
 /* ------------.------------- */
 /* ------------.------------- */
 /* ------------.------------- */
-/* ------------.------------- */
-/* ------------.------------- */
+/* ----------high--priority------------- */
+.section__title {
+  margin-bottom: 50px;
+}
+.has-hover {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: color, fill, background-color, box-shadow;
+}
+/* ----------high--priority------------- */
