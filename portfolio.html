@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./css/style.css" rel="stylesheet" />
-    <link href="./css/style-BEM.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <!-- <link href="./css/style.css" rel="stylesheet" /> -->
+    <!-- <link href="./css/style-BEM.css" rel="stylesheet" /> -->
+    <link href="./css/main.min.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,8 +33,10 @@
         </a>
 
         <nav class="flex-lined-space-between navigation">
-          <a class="header__link current-page" href="./index.html">Agencja</a>
-          <a class="header__link" href="./portfolio.html">Portfolio</a>
+          <a class="header__link" href="./index.html">Agencja</a>
+          <a class="header__link current-page" href="./portfolio.html"
+            >Portfolio</a
+          >
           <a class="header__link" href="#contact">Kontakt</a>
         </nav>
 
@@ -357,6 +363,7 @@
             <div class="newsletter-form__flex">
               <input
                 id="newsletter-form__input-email"
+                class="newsletter-form__input-email"
                 type="email"
                 name="newsletter-email"
                 placeholder="E-mail"
