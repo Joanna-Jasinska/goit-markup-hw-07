@@ -833,6 +833,14 @@ input:checked + label .policy-checkbox__icon-unchecked {
   fill: #2196f3;
   border-color: #2196f3;
   cursor: pointer;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: color, fill, background-color, border, -webkit-box-shadow;
+  transition-property: color, fill, background-color, border, -webkit-box-shadow;
+  transition-property: color, fill, background-color, box-shadow, border;
+  transition-property: color, fill, background-color, box-shadow, border, -webkit-box-shadow;
+  -webkit-transition-duration: 2500ms;
+          transition-duration: 2500ms;
 }
 .icon-client:hover > svg, .icon-client:focus > svg {
   fill: #2196f3;
@@ -1155,8 +1163,8 @@ input:checked + label .policy-checkbox__icon-unchecked {
   transition-property: color, fill, background-color, border, -webkit-box-shadow;
   transition-property: color, fill, background-color, box-shadow, border;
   transition-property: color, fill, background-color, box-shadow, border, -webkit-box-shadow;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 
 .is-hidden {
