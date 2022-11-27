@@ -3,16 +3,21 @@
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "./public/css"
+      "savePath": "./css"
     },
     {
       "extensionName": ".min.css",
       "format": "compressed",
-      "savePath": "./public/css"
+      "savePath": "./css"
     }
   ],
-  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
-  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**",
+    "sass/utils/**"
+    // "sass/components/**"
+  ],
+  "liveSassCompile.settings.generateMap": true,
   //autoprefix, will auto add perfix like -webkit- -moz-..
   "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
 }
