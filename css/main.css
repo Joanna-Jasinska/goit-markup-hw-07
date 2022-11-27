@@ -1151,8 +1151,8 @@ input:checked + label .policy-checkbox__icon-unchecked {
 .has-hover {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  -webkit-transition-duration: 2500ms;
+          transition-duration: 2500ms;
   -webkit-transition-property: color, fill, background-color, border, -webkit-box-shadow;
   transition-property: color, fill, background-color, border, -webkit-box-shadow;
   transition-property: color, fill, background-color, box-shadow, border;
