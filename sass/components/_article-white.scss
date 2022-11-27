@@ -57,20 +57,13 @@
   height: 92px;
   padding: 16px 32px;
   border: 1px solid $color-gray;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // transition-property: color, fill, background-color, box-shadow, border;
+  // transition-duration: 2500ms;
   &:hover,
   &:focus {
     fill: $color-accented;
     border-color: $color-accented;
     cursor: pointer;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color, fill, background-color, box-shadow, border;
-    transition-duration: 2500ms;
-    > svg {
-      fill: $color-accented;
-      cursor: pointer;
-    }
-  }
-  > svg {
-    fill: $color-normal;
   }
 }

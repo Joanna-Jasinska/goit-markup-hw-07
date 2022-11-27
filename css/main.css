@@ -506,6 +506,9 @@ body {
   outline-width: 0px;
   border-radius: 4px;
 }
+.message-us-form__input:focus + label, .message-us-form__textarea:focus + label {
+  fill: #2196f3;
+}
 .message-us-form__textarea {
   width: 448px;
   height: 120px;
@@ -570,6 +573,9 @@ body {
   top: 14px;
   cursor: text;
 }
+.icon-input-person:focus {
+  fill: #2196f3;
+}
 .icon-input-phone {
   z-index: 1;
   content: " ";
@@ -593,6 +599,9 @@ body {
   left: 12px;
   top: 14px;
   cursor: text;
+}
+.icon-input-email:focus {
+  fill: #2196f3;
 }
 
 .policy-checkbox {
@@ -833,21 +842,6 @@ input:checked + label .policy-checkbox__icon-unchecked {
   fill: #2196f3;
   border-color: #2196f3;
   cursor: pointer;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: color, fill, background-color, border, -webkit-box-shadow;
-  transition-property: color, fill, background-color, border, -webkit-box-shadow;
-  transition-property: color, fill, background-color, box-shadow, border;
-  transition-property: color, fill, background-color, box-shadow, border, -webkit-box-shadow;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
-}
-.icon-client:hover > svg, .icon-client:focus > svg {
-  fill: #2196f3;
-  cursor: pointer;
-}
-.icon-client > svg {
-  fill: #757575;
 }
 
 .article-gray {
@@ -1159,12 +1153,12 @@ input:checked + label .policy-checkbox__icon-unchecked {
 .has-hover {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-property: color, fill, background-color, border, -webkit-box-shadow;
   transition-property: color, fill, background-color, border, -webkit-box-shadow;
   transition-property: color, fill, background-color, box-shadow, border;
   transition-property: color, fill, background-color, box-shadow, border, -webkit-box-shadow;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
 }
 
 .is-hidden {

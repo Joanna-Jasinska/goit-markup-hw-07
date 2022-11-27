@@ -75,8 +75,8 @@
 }
 .has-hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color, fill, background-color, box-shadow, border;
   transition-duration: 250ms;
+  transition-property: color, fill, background-color, box-shadow, border;
 }
 
 .is-hidden {
