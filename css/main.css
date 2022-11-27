@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -253,6 +254,8 @@ summary {
   display: list-item;
 }
 
+=======
+>>>>>>> 551f279c7e0f61bfcc4d0a084d71339284e20bbf
 h1,
 h2,
 h3,
@@ -283,8 +286,12 @@ ul {
   font-weight: 400;
   font-size: 14px;
   position: relative;
+<<<<<<< HEAD
   min-width: 1600px;
   width: 100%;
+=======
+  width: 1600px;
+>>>>>>> 551f279c7e0f61bfcc4d0a084d71339284e20bbf
 }
 
 body {
@@ -311,6 +318,7 @@ body {
 
 .footer {
   margin: 0px auto;
+<<<<<<< HEAD
   min-width: 1600px;
   width: 100%;
   height: 252px;
@@ -321,6 +329,19 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  width: 1600px;
+  height: 252px;
+  padding-left: 200px;
+  padding-right: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* align-items: center; */
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+>>>>>>> 551f279c7e0f61bfcc4d0a084d71339284e20bbf
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -766,7 +787,11 @@ input:checked + label .policy-checkbox__icon-unchecked {
   color: white;
 }
 
+<<<<<<< HEAD
 .article-white {
+=======
+.upper-article {
+>>>>>>> 551f279c7e0f61bfcc4d0a084d71339284e20bbf
   line-height: 171%;
 }
 
@@ -831,10 +856,18 @@ input:checked + label .policy-checkbox__icon-unchecked {
 }
 .icon-client:hover, .icon-client:focus {
   fill: #2196f3;
+<<<<<<< HEAD
   border-color: #2196f3;
   cursor: pointer;
 }
 .icon-client:hover > svg, .icon-client:focus > svg {
+=======
+  border: 1px solid #2196f3;
+  cursor: pointer;
+}
+.icon-client > svg:hover,
+.icon-client > svg:focus {
+>>>>>>> 551f279c7e0f61bfcc4d0a084d71339284e20bbf
   fill: #2196f3;
   cursor: pointer;
 }
@@ -842,7 +875,11 @@ input:checked + label .policy-checkbox__icon-unchecked {
   fill: #757575;
 }
 
+<<<<<<< HEAD
 .article-gray {
+=======
+.lower-article {
+>>>>>>> 551f279c7e0f61bfcc4d0a084d71339284e20bbf
   background-color: #f5f4fa;
 }
 
@@ -907,7 +944,10 @@ input:checked + label .policy-checkbox__icon-unchecked {
 .product-card .slide-from-bottom {
   position: absolute;
   top: 100%;
+<<<<<<< HEAD
   height: 100%;
+=======
+>>>>>>> 551f279c7e0f61bfcc4d0a084d71339284e20bbf
   padding: 49px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   font-family: "Roboto";
@@ -1133,7 +1173,11 @@ input:checked + label .policy-checkbox__icon-unchecked {
           justify-content: center;
   position: relative;
   width: 1200px;
+<<<<<<< HEAD
   margin: 0 auto;
+=======
+  margin: 0 215px;
+>>>>>>> 551f279c7e0f61bfcc4d0a084d71339284e20bbf
   gap: 8px;
 }
 
@@ -1153,10 +1197,17 @@ input:checked + label .policy-checkbox__icon-unchecked {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
+<<<<<<< HEAD
   -webkit-transition-property: color, fill, background-color, border, -webkit-box-shadow;
   transition-property: color, fill, background-color, border, -webkit-box-shadow;
   transition-property: color, fill, background-color, box-shadow, border;
   transition-property: color, fill, background-color, box-shadow, border, -webkit-box-shadow;
+=======
+  -webkit-transition-property: color, fill, background-color, -webkit-box-shadow;
+  transition-property: color, fill, background-color, -webkit-box-shadow;
+  transition-property: color, fill, background-color, box-shadow;
+  transition-property: color, fill, background-color, box-shadow, -webkit-box-shadow;
+>>>>>>> 551f279c7e0f61bfcc4d0a084d71339284e20bbf
 }
 
 .is-hidden {
